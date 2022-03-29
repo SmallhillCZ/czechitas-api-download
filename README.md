@@ -33,6 +33,8 @@
 }
 ```
 
+#### 3) Spustím extraktor a data se mi načtou do Storage do bucketu `api-test` do tabulky `faktury`
+
 ## Python
 
 Okomentovaný ukázkový kód je v souboru [download.py](download.py), v notebooku [download.ipynb](download.ipynb) a níže:
