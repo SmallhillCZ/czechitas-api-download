@@ -44,7 +44,7 @@ Okomentovaný ukázkový kód je v souboru [download.py](download.py), v noteboo
 endpoint = 'https://opendata.mfcr.cz/api/v1/faktury'
 
 offset = 0 # od ktereho radku zacit
-limit = 10000 # kolik radku na stranku
+limit = 1000 # kolik radku na stranku
 
 # nactu si prazdny dataframe
 df = pd.DataFrame()
@@ -53,6 +53,7 @@ df = pd.DataFrame()
 while True:
 
   # vytvorim adresu podle dokumentace - limit je kolik radku, offset od ktereho a `dodavatel_i%C4%8Do=eq.64949681` je filtr na dodavatele T-Mobile
+  # treba pro prvni cyklus bude vysledek takovy: https://opendata.mfcr.cz/api/v1/faktury?limit=1000&offset=0&dodavatel_i%C4%8Do=eq.64949681
   url = f"{endpoint}?limit={limit}&offset={offset}&dodavatel_i%C4%8Do=eq.64949681"
   print(url) # vypisu url na obrazovku
 
