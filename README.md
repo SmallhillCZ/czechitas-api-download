@@ -59,7 +59,7 @@ while True:
   # nactu data
   df_part = pd.read_json(url)
 
-  # zapsat data do celkoveho df - sloucim stare a nove zaznamy a ulozim je do puvodni promenne df
+  # zapsat data do celkoveho df - sloucim stare (df) a nove (df_part) zaznamy a sloucene je ulozim do puvodni promenne df
   df = pd.concat([df, df_part])
 
   # pocet radku tenhle iterace
